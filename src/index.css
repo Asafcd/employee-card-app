@@ -1,4 +1,5 @@
 body {
+  background-color: aquamarine;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+label{
+  font-weight: bold;
+}
+
+.card{
+  width: 60%;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(2,1);
+  margin: auto;
+  margin-top: 12rem;
+  background-color: white;
+}
+
+.card :has(label){
+  text-align: left;
+}
+
+.header-card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: repeat(2,1);
+  align-items: center;
+  justify-content: center;
+}
+.employee-img{
+  width: 20%;
+}
+.employee-img img{
+  width: 100%;
+}
+.body-card{
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: repeat(3,1);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.center-column{
+  padding-left: 5%;
+  padding-right: 5%;
+  border-left: 1px gray dashed;
+  border-right: 1px gray dashed;
+}
+.column{
+  padding-left: 5%;
+  padding-right: 5%;
 }

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {ContextText} from './components/ContextText.tsx'
+/*
+Diseño libre.
+Usar al menos 3 componentes.
+La informacion y contenido de la tarjeta tambien es libre.
+Los datos del empleado pueden ser fijos (crean un objeto con datos estaticos como vimos en clase).
+Debe utilizar Typescript y useContext para pasar la informacion del empleado entre componentes.
+*/
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContextText/>
     </div>
   );
 }
